@@ -21,6 +21,9 @@ class Response
   send: (strings...) ->
     @runWithMiddleware("send", { plaintext: true }, strings...)
 
+  sendFile: (strings...) ->
+    @runWithMiddleware("sendFile", { plaintext: true }, strings...)
+
   # Public: Posts an emote back to the chat source
   #
   # strings - One or more strings to be posted. The order of these strings

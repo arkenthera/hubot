@@ -14,6 +14,8 @@ class Adapter extends EventEmitter
   # Returns nothing.
   send: (envelope, strings...) ->
 
+  sendFile: (envelope, strings...) ->
+
   # Public: Raw method for sending emote data back to the chat source.
   # Defaults as an alias for send
   #
